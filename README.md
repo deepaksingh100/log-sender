@@ -1,5 +1,5 @@
 # log-sender
-Mail Visited URLs from a Computer by using Apache2 (HTTPD) as Forward Proxy.
+Mail all the Visited URLs from a Computer by using Apache2 (HTTPD) as Forward Proxy.
 
 Before running log-sender.jar. Let's have a look at previous instructions. Initially this project is developed for linux only. I will implement this for windows as well.
 
@@ -51,7 +51,7 @@ Download log-sender.jar<br/>
 Run log-sender.jar as cron job :<br/>
 crontab -e<br/>
 Add an entry as following :<br/>
-0 12 * * * java -jar Desktop/log-sender.jar<br/>
+**0 12 * * * java -jar Desktop/log-sender.jar**<br/>
 This enables log-sender.jar to run everyday 12 PM
 
 # Algorithm
