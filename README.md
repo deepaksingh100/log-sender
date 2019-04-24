@@ -1,7 +1,7 @@
 # log-sender
-Mail all the Visited URLs from a Computer by using Apache2 (HTTPD) as Forward Proxy.
+Mail all the visited URLs from a computer by using apache2 (HTTPD) as forward proxy.
 
-Before running log-sender.jar. Let's have a look at previous instructions. Initially this project is developed for linux only. I will implement this for windows as well.
+Let's have a look at instructions to use this project. Initially this project is developed for linux only. I will develope this for windows as well.
 
 # Install apache2
 sudo apt-get update<br/>
@@ -47,12 +47,16 @@ For more information, please visit following pages:
 [rotate-logs-apache2](https://httpd.apache.org/docs/2.4/logs.html)
 
 # What Next???
-Download log-sender.jar<br/>
-Run log-sender.jar as cron job :<br/>
+Clone this repository<br/>
+Open **me.deepak.spy.email.EmailSender** Class<br/>
+Change USER, PASSWORD, SENDER\_EMAIL, RECEIVER\_EMAIL<br/>
+Build the project<br/>
+Export this as runnable jar<br/>
+Run exported runnable jar as cron job :<br/>
 crontab -e<br/>
 Add an entry as following :<br/>
-**0 12 * * * java -jar Desktop/log-sender.jar**<br/>
-This enables log-sender.jar to run everyday 12 PM
+0 12 * * * java -jar Desktop/log-sender.jar<br/>
+This enables log-sender.jar which is at Desktop to run everyday 12 PM
 
 # Algorithm
 1. Read log folder of apache2 (eg. for linux /var/log/apache2/) files startsWith("access.log")
