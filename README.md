@@ -47,16 +47,12 @@ For more information, please visit following pages:
 [rotate-logs-apache2](https://httpd.apache.org/docs/2.4/logs.html)
 
 # What Next???
-Clone this repository<br/>
-Open **me.deepak.spy.email.EmailSender** Class<br/>
-Change USER, PASSWORD, SENDER\_EMAIL, RECEIVER\_EMAIL<br/>
-Build the project<br/>
-Export this as runnable jar<br/>
-Run exported runnable jar as cron job :<br/>
+Download log-sender.jar<br/>
+Run log-sender.jar as cron job :<br/>
 crontab -e<br/>
 Add an entry as following :<br/>
-0 12 * * * java -jar Desktop/log-sender.jar<br/>
-This enables log-sender.jar which is at Desktop to run everyday 12 PM
+**0 12 * * * java -jar Desktop/log-sender.jar**<br/>
+This enables log-sender.jar to run everyday 12 PM
 
 # Algorithm
 1. Read log folder of apache2 (eg. for linux /var/log/apache2/) files startsWith("access.log")
