@@ -21,7 +21,7 @@ Go to /etc/apache2<br/>
 Open apache2.conf<br/>
 search for LogFormat<br/>
 Add following line after all pre defined log formats :<br/>
-**LogFormat "%t \"%r\" %>s %O" my_format**
+**LogFormat "%t \\"%r\\" %>s %O" my_format**
 
 # Pipe Logs to File
 Go to /etc/apache2/sites-enabled<br/>
