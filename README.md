@@ -24,21 +24,21 @@ Add following line after all pre defined log formats :<br/>
 **LogFormat "%t \\"%r\\" %>s %O" my_format**
 
 # Pipe Logs to File
-Go to /etc/apache2/sites-enabled<br/>
-Open 000-default.conf<br/>
-Comment CustomLog ${APACHE\_LOG\_DIR}/access.log combined<br/>
+Go to **/etc/apache2/sites-enabled**<br/>
+Open **000-default.conf**<br/>
+Comment line **CustomLog ${APACHE\_LOG\_DIR}/access.log combined**<br/>
 Add following line:<br/>
 **CustomLog "|/usr/bin/rotatelogs ${APACHE_LOG_DIR}/access.log-%Y.%m.%d 86400" my_format**
 
 # Restart Apache
-sudo service apache2 reload
+**sudo service apache2 restart**
 
 # Add Proxy to Linux
-Go to Network in System Settings<br/>
-Select Network Proxy<br/>
-Select proxy method manual<br/>
-Set host as localhost and port as 80<br/>
-Finally click on "Apply system wide" Button
+Go to **Network** in **System Settings**<br/>
+Select **Network Proxy**<br/>
+Select proxy method **Manual**<br/>
+Set **host as localhost** & **port as 80**<br/>
+Finally click on **"Apply system wide"** Button
 
 # References
 For more information, please visit following pages:
