@@ -17,8 +17,8 @@ Enable the **proxy, proxy_http, and proxy_connect** modules. We can do that usin
 Go to the **/etc/apache2/mods-enabled** directory and open the file **proxy.conf** in a text editor. Uncomment the '#ProxyRequests On' line and the '<Proxy *>' block.
 
 # Add Custom Log Format
-Go to /etc/apache2<br/>
-Open apache2.conf<br/>
+Go to **/etc/apache2**<br/>
+Open **apache2.conf**<br/>
 search for LogFormat<br/>
 Add following line after all pre defined log formats :<br/>
 **LogFormat "%t \\"%r\\" %>s %O" my_format**
