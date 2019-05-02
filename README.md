@@ -43,8 +43,8 @@ Finally click on **"Apply system wide"** Button
 # References
 For more information, please visit following pages:
 
-[configure-apache2-as-a-forward-proxy](https://geek-university.com/apache/configure-apache-as-a-forward-proxy/)<br/>
-[rotate-logs-apache2](https://httpd.apache.org/docs/2.4/logs.html)
+<a href="https://geek-university.com/apache/configure-apache-as-a-forward-proxy/" target="_blank">configure-apache2-as-a-forward-proxy</a><br/>
+<a href="https://httpd.apache.org/docs/2.4/logs.html" target="_blank">rotate-logs-apache2</a><br/>
 
 # What Next???
 Clone this repository<br/>
